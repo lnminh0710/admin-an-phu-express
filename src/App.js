@@ -8,7 +8,7 @@ import AppRoute from './routes/route';
 
 // layouts
 import VerticalLayout from './components/VerticalLayout/';
-import HorizontalLayout from './components/HorizontalLayout/';
+// import HorizontalLayout from './components/HorizontalLayout/';
 import NonAuthLayout from './components/NonAuthLayout';
 
 // Import scss
@@ -48,17 +48,17 @@ class App extends Component {
    * Returns the layout
    */
   getLayout = () => {
-    let layoutCls = VerticalLayout;
-
-    switch (this.props.layout.layoutType) {
-      case 'horizontal':
-        layoutCls = HorizontalLayout;
-        break;
-      default:
-        layoutCls = VerticalLayout;
-        break;
-    }
-    return layoutCls;
+    return VerticalLayout;
+    // console.log('this.props.layout.layoutType', this.props.layout.layoutType);
+    // switch (this.props.layout.layoutType) {
+    //   case 'horizontal':
+    //     layoutCls = HorizontalLayout;
+    //     break;
+    //   default:
+    //     layoutCls = VerticalLayout;
+    //     break;
+    // }
+    // return layoutCls;
   };
 
   render() {

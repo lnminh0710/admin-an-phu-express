@@ -50,9 +50,9 @@ class Login extends Component {
                         <div>
                           <div className="text-center">
                             <div>
-                              <Link to="/" class="">
-                                <img src={logodark} alt="" height="20" class="auth-logo logo-dark mx-auto" />
-                                <img src={logolight} alt="" height="20" class="auth-logo logo-light mx-auto" />
+                              <Link to="/" className="">
+                                <img src={logodark} alt="" height="20" className="auth-logo logo-dark mx-auto" />
+                                <img src={logolight} alt="" height="20" className="auth-logo logo-light mx-auto" />
                               </Link>
                             </div>
 

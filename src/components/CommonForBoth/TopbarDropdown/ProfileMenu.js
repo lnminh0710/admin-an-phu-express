@@ -24,11 +24,11 @@ class ProfileMenu extends Component {
 
   render() {
     let username = 'Admin';
-    if (localStorage.getItem('authUser')) {
-      const obj = JSON.parse(localStorage.getItem('authUser'));
-      const uNm = obj.email.split('@')[0];
-      username = uNm.charAt(0).toUpperCase() + uNm.slice(1);
-    }
+    // if (localStorage.getItem('authUser')) {
+    //   const obj = JSON.parse(localStorage.getItem('authUser'));
+    //   const uNm = obj.email.split('@')[0];
+    //   username = uNm.charAt(0).toUpperCase() + uNm.slice(1);
+    // }
 
     return (
       <React.Fragment>
