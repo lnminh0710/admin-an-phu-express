@@ -251,6 +251,7 @@ class FormElements extends Component {
                               />
                               <Label
                                 className="form-check-label"
+                                htmlFor="CustomCheck1"
                                 onClick={() => {
                                   this.setState({ customchk: !this.state.customchk });
                                 }}
